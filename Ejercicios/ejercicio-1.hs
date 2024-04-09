@@ -22,3 +22,9 @@ cubo numero = numero * numero
 area :: Num a => a -> a -> a
 area base altura = base * altura
 
+
+-- EJERCICIO 5 --
+-- Definir la función esBisiesto/1, indica si un año es bisiesto. (Un año es bisiesto si es divisible por 400 o es divisible por 4 pero no es divisible por 100) --
+
+esBisiesto :: Int -> Bool
+esBisiesto anio = (mod anio 400 == 0) || (mod anio 4 == 0 && mod anio 1006 /= 0) 

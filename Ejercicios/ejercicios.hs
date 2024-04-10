@@ -28,3 +28,16 @@ area base altura = base * altura
 
 esBisiesto :: Int -> Bool
 esBisiesto anio = (mod anio 400 == 0) || (mod anio 4 == 0 && mod anio 1006 /= 0) 
+
+-- EJERCICIO 6 --
+-- Definir la función celsiusToFahr/1, pasa una temperatura en grados Celsius a grados Fahrenheit. --
+
+celsiusToFahr :: Floating a => a -> a
+celsiusToFahr gradosEnCelcius = gradosEnCelcius * (9/5) + 32
+
+-- EJERCICIO 7 --
+-- Definir la función fahrToCelsius/1, la inversa de la anterior. --
+
+fahrToCelsius :: Floating a => a -> a
+fahrToCelsius gradosEnFahr = (gradosEnFahr - 32) * 5/9
+
